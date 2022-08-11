@@ -1,0 +1,285 @@
+[
+{
+    "model": "cars.paramname",
+    "pk": 1,
+    "fields": {
+        "name": "Дальность свечения"
+    }
+},
+{
+    "model": "cars.paramname",
+    "pk": 2,
+    "fields": {
+        "name": "Материал руля"
+    }
+},
+{
+    "model": "cars.paramname",
+    "pk": 3,
+    "fields": {
+        "name": "Шиповка"
+    }
+},
+{
+    "model": "cars.param",
+    "pk": 1,
+    "fields": {
+        "name": 1,
+        "value": "10 м"
+    }
+},
+{
+    "model": "cars.param",
+    "pk": 2,
+    "fields": {
+        "name": 1,
+        "value": "50 м"
+    }
+},
+{
+    "model": "cars.param",
+    "pk": 3,
+    "fields": {
+        "name": 1,
+        "value": "150 м"
+    }
+},
+{
+    "model": "cars.param",
+    "pk": 4,
+    "fields": {
+        "name": 2,
+        "value": "Кожа"
+    }
+},
+{
+    "model": "cars.param",
+    "pk": 5,
+    "fields": {
+        "name": 2,
+        "value": "Экокожа"
+    }
+},
+{
+    "model": "cars.param",
+    "pk": 6,
+    "fields": {
+        "name": 3,
+        "value": "Есть"
+    }
+},
+{
+    "model": "cars.param",
+    "pk": 7,
+    "fields": {
+        "name": 3,
+        "value": "Нет"
+    }
+},
+{
+    "model": "cars.detailtype",
+    "pk": 1,
+    "fields": {
+        "name": "Фары"
+    }
+},
+{
+    "model": "cars.detailtype",
+    "pk": 2,
+    "fields": {
+        "name": "Колеса"
+    }
+},
+{
+    "model": "cars.detailtype",
+    "pk": 3,
+    "fields": {
+        "name": "Рули"
+    }
+},
+{
+    "model": "cars.detail",
+    "pk": 1,
+    "fields": {
+        "name": "Фары хорошие",
+        "detail_type": 1,
+        "price": "500.00",
+        "amount_per_car": 2,
+        "params": [
+            1
+        ]
+    }
+},
+{
+    "model": "cars.detail",
+    "pk": 2,
+    "fields": {
+        "name": "Фары отличные",
+        "detail_type": 1,
+        "price": "350.00",
+        "amount_per_car": 2,
+        "params": [
+            2
+        ]
+    }
+},
+{
+    "model": "cars.detail",
+    "pk": 3,
+    "fields": {
+        "name": "Фары лучшие",
+        "detail_type": 1,
+        "price": "500.00",
+        "amount_per_car": 2,
+        "params": [
+            3
+        ]
+    }
+},
+{
+    "model": "cars.detail",
+    "pk": 4,
+    "fields": {
+        "name": "Руль обычный",
+        "detail_type": 3,
+        "price": "10000.00",
+        "amount_per_car": 1,
+        "params": [
+            4
+        ]
+    }
+},
+{
+    "model": "cars.detail",
+    "pk": 5,
+    "fields": {
+        "name": "Руль спортивный",
+        "detail_type": 3,
+        "price": "95.00",
+        "amount_per_car": 1,
+        "params": [
+            5
+        ]
+    }
+},
+{
+    "model": "cars.detail",
+    "pk": 6,
+    "fields": {
+        "name": "Зимняя резина",
+        "detail_type": 2,
+        "price": "400.00",
+        "amount_per_car": 4,
+        "params": [
+            6
+        ]
+    }
+},
+{
+    "model": "cars.detail",
+    "pk": 7,
+    "fields": {
+        "name": "Летняя резина",
+        "detail_type": 2,
+        "price": "360.00",
+        "amount_per_car": 4,
+        "params": [
+            7
+        ]
+    }
+},
+{
+    "model": "cars.brand",
+    "pk": 1,
+    "fields": {
+        "name": "Audi"
+    }
+},
+{
+    "model": "cars.brand",
+    "pk": 2,
+    "fields": {
+        "name": "Mazda"
+    }
+},
+{
+    "model": "cars.brand",
+    "pk": 3,
+    "fields": {
+        "name": "Lada"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+        "name": "Audi A5",
+        "detail_type": 1,
+        "params": [
+            1,
+            4,
+            6
+        ]
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+        "name": "Mazda CX3",
+        "detail_type": 2,
+        "params": [
+            2,
+            5,
+            7
+        ]
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+        "name": "Lada Priora",
+        "detail_type": 3,
+        "params": [
+            3,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+        "name": "Audi A6",
+        "detail_type": 1,
+        "params": [
+            1,
+            3,
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "cars.carprice",
+    "pk": 1,
+    "fields": {
+        "car": 1,
+        "cost_price": "12600.00",
+        "margin": "1.15",
+        "price": "14490.00"
+    }
+},
+{
+    "model": "cars.carprice",
+    "pk": 2,
+    "fields": {
+        "car": 4,
+        "cost_price": "5040.00",
+        "margin": "1.30",
+        "price": "6552.00"
+    }
+}
+]
